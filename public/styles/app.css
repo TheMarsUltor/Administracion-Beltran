@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {background-color:rgb(59, 107, 163);}
+.container {
+    margin: 0;
+    padding: 1em 5% ;
+    background-color: transparent;
+}
+#app.container {padding: 0 10%;}
+#app>header.navbar {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap :.3em;
+    background-color:  #2d3e50;
+    margin-bottom: 2em;
+    border-radius: 0 0 .5em .5em;    
+}
+header.navbar .nv-item {
+    margin: auto;   
+    display: grid;
+}
+.nv-item>button {
+    font-size: 1em;
+    border-radius:  0;
+    
+}
+.output .btn-group{
+    display: flex;
+    flex-direction: column;   
+}
+.output .btn-group button{
+    font-size: 1em;
+    font-weight: 700;
+    padding: 1em;
+    margin:  .5em 35%;
+}
+#btn_agregar{padding: 1em;}
+.nv-item.title {
+    padding: 1em;
+    color: white;   
+}
+
+/*
+ * Login
+ */
+
+#app> main>.login {padding: 0 15% 0 0;}
+.login {
+    background-color: white;
+    padding: 1em 5em 2em;
+    border-radius: .25em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.space{
+    border-right: 1px solid #2d3e50;
+}
+
+.space> img{
+    height: 100%;
+    width: 100%;
+}
+
+.login>form{
+    padding: 1em ;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30%;
+    gap: 1em;
+}
+.title-form{
+    font-size: 2em;
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+form> .form-input{
+    padding: 1em  8%;
+    margin: 0 15%;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="file"]
+select {
+   text-align: center;
+   width: 100%;
+   height: 40px;
+}
+.login input[type="submit"] {
+    padding: .7em ;
+    width: 100%;
+    font-weight: 500;
+    font-size: 1em;
+    background-color: #2d3e50;
+    color: white;
+}
+.form-input>h4{
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+    font:900;
+}
+.profesores,
+.comisiones,
+.carreras,
+.asignaturas,
+.aulas,
+.actividades,
+.perfiles,
+.usuarios,
+.entity,
+.menu-adm {background-color: #2d3e50;}
+
+
+form p{
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+
+form label{
+    color: white;
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: 600;    
+}
+.menu-botonera{
+    border-radius: .2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    padding: 1em 5%;
+}
+.menu-botonera> button {
+    padding: 1em ;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+table{width: 100%;}
+.table{
+    border-radius: 4px;
+    border-collapse: collapse;
+    font-size: 1em;
+    margin: auto;
+    box-shadow: 0 0 20px black;
+    font-family: sans-serif;
+}
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap:.5em;
+}
+.btns input{
+    padding: .6em;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 3px;
+}
+.btns input:hover{
+    font-weight: 700;
+    cursor:pointer;
+}
+.btns input[type="submit"] {background-color: #529c52;}
+.btns input[type="submit"]:hover {background-color: #098d09;}
+.btns input[type="button"] {
+    color: black;
+    background-color:rgb(160, 152, 152);
+}
+.btns input[type="button"]:hover {
+    background-color: white;
+    color: black;
+}
+thead{font-size: 1.5em;}
+.table thead tr{
+    background-color: #2d3e50;
+    color: white;
+    text-align: middle;
+}
+.table th, .table td{padding: 11px 10px;}
+.table td{
+    text-align: center;
+}
+.table tbody tr:hover{
+    border-bottom: 3px solid #dddd;
+    background-color: rgb(203, 203, 203);
+}
+.table tbody tr{    
+    background-color: #f3f3f3;
+}
+
+.table button{
+    padding: 1em;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+button.del {
+    background-color: #a75454;
+    color: white;
+}
+button.mod {
+    background-color: #529c52;
+    color: white;
+}
+
+.table button:hover {
+    cursor:pointer;
+}
+button.mod:hover {
+    background-color: #098d09;
+    padding: 1.1em;
+}
+
+button.del:hover{
+    background-color: #dd0000;
+    padding: 1.1em;
+}
+
+.btns>{
+    background-color: red;
+}
+
+#logout{
+    padding: 1em;
+}
+
+.menu-adm h2 {
+    text-align: center;
+    color: whitesmoke;
+    padding: .5em;
+    margin: .5em 0 ;
+    font-size: 1.5em;
+}
+
+.filtar-tabla {
+    padding: 1em;
+    margin: 1em 30%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.msg_server{
+    padding: 1em;
+    border:#dd0000;
+    font-size: 1.1em;
+    font-weight: 800;
+    background-color: #a75454;
+    display: none;
+}
+
+details {
+    padding: 1%;
+    margin: 5%;
+    background-color: rgb(73, 86, 138);
+    color: whitesmoke;
+    border-radius: 5px;
+}
+details summary,
+details ul {
+    padding: 0.5%;
+}
+
+
+summary {
+    font-size: 1.5em;
+}
+
+li {
+    font-size: 1.1em;
+    margin-left: 2%;
+}
+
+pre{
+    background-color: rgb(32, 29, 40);
+    padding: 5px;
+    color: rgb(181, 182, 186);
+    font-size: 1.3em;
+    margin: 1% 2%;
+}   

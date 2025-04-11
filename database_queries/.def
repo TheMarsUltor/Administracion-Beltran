@@ -1,0 +1,31 @@
+NOTAS:
+
+
+Refactorizar 'Usuarios' para 
+que contemple el nuevo campo 'EMAIL'
+
+
+Auth modificado, levantar datos desde 'RESPONSE.LOCALS'
+
+Usuarios del sistema:
+
+
+Si no hay usuarios registrados:
+    Se define un administrador del sistema () {
+        cargar nombre_completo, alias, email, contraseña, perfil[ADM] {
+            enviar email de verificación, 
+            CONFIGURAR_SMPT()
+            finalizado : mostrar pantalla principal
+        }
+
+    }
+    
+
+/usuarios/recuperar-clave
+    ->  solicitar el email (valida) 
+    ->  enviamos el email con un link para cambiar la clave
+    ->  usuario cambia la clave -> reprocesa 
+
+
+
+
