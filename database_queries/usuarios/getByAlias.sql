@@ -24,7 +24,8 @@ BEGIN
 								u.clave,
 								u.alias alias, 
 								u.intento intentos_fallidos,
-								p.codigo perfil
+								p.codigo perfil,
+								0 error_code
 						from 	usuarios u 
 								inner join perfiles p on p.id_perfil = u.id_perfil
 						where   u.alias = pALIAS
