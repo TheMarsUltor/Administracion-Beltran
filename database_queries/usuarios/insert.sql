@@ -3,7 +3,7 @@ PROCEDURE `SP_INSERT_USUARIO`   (
                                 pNOMBRE_COMPLETO	varchar(64),
                                 pUSERNAME 	        varchar(32),
                                 pEMAIL				varchar(128),
-                                pHASHED_PASS            varchar(60),
+                                pHASHED_PASS            varchar(128),
                                 pPERFIL_CODE            varchar(8)
                                 )
 BEGIN
